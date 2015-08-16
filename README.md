@@ -1,2 +1,2 @@
 # pythonSniffer
-POP/IMAP Python Sniffer
+Python POP/IMAP Sniffer by Claudio Viviani
