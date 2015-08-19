@@ -75,9 +75,6 @@ try:
         # Tramite la funzione ntohs del modulo socket converto l'ordine dei byte da network ad host
         # estrapolando il protocollo che si trova nella terza tupla (eth[2])
         eth_protocol = socket.ntohs(eth[2])
-        #
-        # Per debug faccio stampare a video il dest mac, source mac, e l'ether type (protocollo)
-        # print 'Destination MAC : ' + eth_addr(packet[0:6]) + ' Source MAC : ' + eth_addr(packet[6:12]) + ' Protocol : ' + str(eth_protocol)
 
         # Considero solo il protocollo IP che viene classificato col valore intero 8
         if eth_protocol == 8 :
